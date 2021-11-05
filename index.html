@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #map{
+
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="map">
+
+    </div>
+    <script>
+        function initMap(){
+            var location ={ lat: -25.363 ,lng :131.044};
+            var map = new google.maps.Map(document.getElementById("map"),{
+                zoom:4,
+                center:location
+            });
+
+        }
+    </script>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.6914991573535!2d90.40208321402399!3d23.793997593028422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c737a6ef0e89%3A0x7b885c82510fef14!2sDahaka%20Medical%20Health%20Care%20Institute!5e0!3m2!1sen!2sbd!4v1636049749648!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
+</body>
+</html>
